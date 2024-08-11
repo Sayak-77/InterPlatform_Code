@@ -1,9 +1,10 @@
 function randomIntFromInterval(min, max) { 
-    return Math.floor(Math.random() * (max - min + 1) + min);
+    return Math.floor(Math.random() * (max - min + 1) + min);  //function to generate random number
 }
 const { spawn } = require('child_process');
+// for(let i=1;i<=10;i++){
+let user =randomIntFromInterval(1,10); //generating random number within given interval
 
-let user =randomIntFromInterval(1,10);
 switch(user){
     case 1:
         const call1= spawn('python', ['disarium.py']);
@@ -159,4 +160,5 @@ switch(user){
         console.log("Invalid day");
         break;
 }
+// }
 
